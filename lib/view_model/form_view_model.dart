@@ -105,6 +105,7 @@ class FormViewModel extends StateNotifier<FormState> {
   void updateNextAction(String value) {
     state = state.copyWith(nextAction: value);
   }
+  //first thing
   void setLoading(bool value) {
     loading = value;
     state = state.copyWith(); // Trigger a rebuild by updating the state
